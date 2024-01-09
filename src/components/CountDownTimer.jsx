@@ -115,6 +115,10 @@ const CountDownTimer = ({ setActive }) => {
 
     // Crear una nueva fecha para el próximo día 21
     const next21 = new Date();
+    if (actualDate.getHours() >= hourToStart + 1) {
+      next21.setDate(actualDate.getDate() + 1);
+    }
+
     next21.setHours(hourToStart, 0, 0, 0);
 
     // Verificar si el próximo día 21 ya pasó en este mes
