@@ -104,11 +104,11 @@ const CountDownTimer = ({ setActive }) => {
     // Obtener la fecha y hora actual
     const actualDate = new Date();
     const gmtOffset = actualDate.getTimezoneOffset() / 60;
-    let hourToStart = 20;
+    let hourToStart = 19;
     if (gmtOffset === 6) {
-      hourToStart = 21;
+      hourToStart = 20;
     } else if (gmtOffset === 5) {
-      hourToStart = 22;
+      hourToStart = 21;
     }
 
     if (actualDate.getHours() === hourToStart) return 0;

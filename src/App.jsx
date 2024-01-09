@@ -13,11 +13,11 @@ const App = () => {
   const date = new Date();
   const actualHour = date.getHours();
   const gmtOffset = date.getTimezoneOffset() / 60;
-  let hourToStart = 20;
+  let hourToStart = 19;
   if (gmtOffset === 6) {
-    hourToStart = 21;
+    hourToStart = 20;
   } else if (gmtOffset === 5) {
-    hourToStart = 22;
+    hourToStart = 21;
   }
 
   return (
