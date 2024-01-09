@@ -19,6 +19,9 @@ const App = () => {
   } else if (gmtOffset === 5) {
     hourToStart = 21;
   }
+  if (date.getHours() >= hourToStart + 1) {
+    date.setDate(date.getDate() + 1);
+  }
 
   return (
     <div className="app-container">
